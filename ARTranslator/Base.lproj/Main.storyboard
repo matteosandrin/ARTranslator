@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARTranslator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tix-nH-sfG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMs-gA-sya">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsc-JN-lWZ">
+                                <rect key="frame" x="176" y="322" width="22" height="22"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2r-MG-pmY">
+                                <rect key="frame" x="16" y="601" width="343" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcG-c6-LWg">
+                                        <rect key="frame" x="15" y="15" width="313" height="20"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AcG-c6-LWg" firstAttribute="top" secondItem="O2r-MG-pmY" secondAttribute="top" constant="15" id="WA2-Ve-cPk"/>
+                                    <constraint firstAttribute="bottom" secondItem="AcG-c6-LWg" secondAttribute="bottom" constant="15" id="cZr-vt-0sy"/>
+                                    <constraint firstItem="AcG-c6-LWg" firstAttribute="leading" secondItem="O2r-MG-pmY" secondAttribute="leading" constant="15" id="dHW-5o-6Rm"/>
+                                    <constraint firstAttribute="trailing" secondItem="AcG-c6-LWg" secondAttribute="trailing" constant="15" id="q28-CF-zFb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ye0-Xl-K8a">
+                                <rect key="frame" x="15" y="35" width="345" height="62"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCx-6x-5Hq">
+                                        <rect key="frame" x="15" y="15" width="315" height="32"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                        <state key="normal" title="Language">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="w0r-LI-hIZ" kind="presentation" id="Sto-0q-DvH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.37647058820000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cCx-6x-5Hq" secondAttribute="trailing" constant="15" id="ZX4-MY-rHm"/>
+                                    <constraint firstItem="cCx-6x-5Hq" firstAttribute="leading" secondItem="ye0-Xl-K8a" secondAttribute="leading" constant="15" id="f0R-lO-4sb"/>
+                                    <constraint firstItem="cCx-6x-5Hq" firstAttribute="top" secondItem="ye0-Xl-K8a" secondAttribute="top" constant="15" id="uW3-qf-GMY"/>
+                                    <constraint firstAttribute="bottom" secondItem="cCx-6x-5Hq" secondAttribute="bottom" constant="15" id="wun-hv-naf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W2V-Gj-Pwx" firstAttribute="bottom" secondItem="O2r-MG-pmY" secondAttribute="bottom" constant="16" id="1qn-0n-NKe"/>
+                            <constraint firstItem="O2r-MG-pmY" firstAttribute="centerX" secondItem="XMs-gA-sya" secondAttribute="centerX" id="37s-Lk-4VJ"/>
+                            <constraint firstItem="ye0-Xl-K8a" firstAttribute="leading" secondItem="W2V-Gj-Pwx" secondAttribute="leading" constant="15" id="4u0-nX-dgM"/>
+                            <constraint firstItem="ye0-Xl-K8a" firstAttribute="top" secondItem="W2V-Gj-Pwx" secondAttribute="top" constant="15" id="58T-hc-Sth"/>
+                            <constraint firstItem="O2r-MG-pmY" firstAttribute="leading" secondItem="W2V-Gj-Pwx" secondAttribute="leading" constant="16" id="9Ch-dp-pkh"/>
+                            <constraint firstItem="W2V-Gj-Pwx" firstAttribute="trailing" secondItem="ye0-Xl-K8a" secondAttribute="trailing" constant="15" id="CGj-o3-3OE"/>
+                            <constraint firstItem="fsc-JN-lWZ" firstAttribute="centerY" secondItem="tix-nH-sfG" secondAttribute="centerY" id="F1P-V6-WRz"/>
+                            <constraint firstItem="fsc-JN-lWZ" firstAttribute="centerX" secondItem="tix-nH-sfG" secondAttribute="centerX" id="FRB-xB-mYc"/>
+                            <constraint firstItem="ye0-Xl-K8a" firstAttribute="centerX" secondItem="W2V-Gj-Pwx" secondAttribute="centerX" id="RtN-cL-MIS"/>
+                            <constraint firstItem="XMs-gA-sya" firstAttribute="trailing" secondItem="W2V-Gj-Pwx" secondAttribute="trailing" id="bg6-Jm-8Wb"/>
+                            <constraint firstItem="XMs-gA-sya" firstAttribute="leading" secondItem="W2V-Gj-Pwx" secondAttribute="leading" id="fgq-Rs-G2A"/>
+                            <constraint firstItem="W2V-Gj-Pwx" firstAttribute="trailing" secondItem="O2r-MG-pmY" secondAttribute="trailing" constant="16" id="n66-xS-yUa"/>
+                            <constraint firstItem="XMs-gA-sya" firstAttribute="top" secondItem="tix-nH-sfG" secondAttribute="top" id="vHp-rp-JQw"/>
+                            <constraint firstItem="XMs-gA-sya" firstAttribute="bottom" secondItem="W2V-Gj-Pwx" secondAttribute="bottom" id="zam-8D-9DF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W2V-Gj-Pwx"/>
+                    </view>
+                    <connections>
+                        <outlet property="languageButton" destination="cCx-6x-5Hq" id="N5k-9o-KHy"/>
+                        <outlet property="languageView" destination="ye0-Xl-K8a" id="YKY-Oa-a6p"/>
+                        <outlet property="predictLabel" destination="AcG-c6-LWg" id="4qI-kr-6fB"/>
+                        <outlet property="predictView" destination="O2r-MG-pmY" id="mI3-1y-BGT"/>
+                        <outlet property="sceneView" destination="XMs-gA-sya" id="uz8-4k-aSX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="eOz-FZ-wrv">
+            <objects>
+                <tableViewController id="w0r-LI-hIZ" customClass="ARTableViewController" customModule="ARTranslator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DZ9-CC-dNa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="sev-yW-Qxk">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sev-yW-Qxk" id="DVu-lW-wLf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="w0r-LI-hIZ" id="FqX-eF-Pfp"/>
+                            <outlet property="delegate" destination="w0r-LI-hIZ" id="Auy-af-YlB"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdy-e8-bbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="137"/>
+        </scene>
+    </scenes>
+</document>
