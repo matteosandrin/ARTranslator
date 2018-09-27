@@ -2,6 +2,8 @@
 
 ## ARTranslator
 
+- 🏆 HackNYU 2018 Winner
+
 ### Inspiration
 
 As an international student, I wanted to create a tool that makes learning another language easier and more fun. This app combines the immediacy of pointing your phone with the convenience of instantly seeing the word you're looking for.
